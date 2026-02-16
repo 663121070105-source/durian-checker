@@ -1,10 +1,10 @@
 import streamlit as st
 import streamlit.components.v1 as components
 
-# ตั้งค่าหน้าจอให้กว้าง
+# ตั้งค่าหน้าจอ
 st.set_page_config(layout="wide", page_title="Durian Smart AI")
 
-# โค้ด HTML/CSS/JS (ระบบ Login + Admin ที่คุณต้องการ)
+# --- ส่วนของโค้ด HTML/CSS/JS (อยู่ในเครื่องหมายคำพูด) ---
 html_code = """
 <!DOCTYPE html>
 <html lang="th">
@@ -580,8 +580,9 @@ html_code = """
 </html>
 """
 
-# คำสั่งแสดงผลของ Streamlit (แสดง HTML)
+# --- ส่วนสั่งแสดงผลของ Streamlit (ดึงตัวแปร html_code มาโชว์) ---
 components.html(html_code, height=900, scrolling=True)
+
 
 
 
