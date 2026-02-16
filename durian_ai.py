@@ -1,9 +1,17 @@
+import streamlit as st
+import streamlit.components.v1 as components
+
+# ตั้งค่าหน้าจอให้กว้าง
+st.set_page_config(layout="wide", page_title="Durian Smart AI")
+
+# โค้ด HTML/CSS/JS (ระบบ Login + Admin ที่คุณต้องการ)
+html_code = """
 <!DOCTYPE html>
 <html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Durian Smart AI - ระบบวิเคราะห์ทุเรียนอัจฉริยะ</title>
+    <title>Durian Smart AI</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #E8F5E9 0%, #FFF9C4 100%); min-height: 100vh; padding: 20px; }
@@ -570,6 +578,10 @@
     </script>
 </body>
 </html>
+"""
+
+# คำสั่งแสดงผลของ Streamlit (แสดง HTML)
+components.html(html_code, height=900, scrolling=True)
 
 
 
